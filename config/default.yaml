@@ -1,0 +1,3 @@
+# Default runtime config. Loaded first; environment variables and CLI flags
+# layer on top in that order. Schema fields will be filled in as features land.
+{}

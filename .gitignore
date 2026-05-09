@@ -216,3 +216,23 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# sec8k project artifacts
+data/
+models/*
+!models/.gitkeep
+eval_results/*
+!eval_results/.gitkeep
+*.parquet
+*.arrow
+*.bin
+*.safetensors
+*.gguf
+
+# Local secrets / overrides
+.env.local
+*.env.local
+secrets/
+
+# Notebook checkpoints (explicit; covered by upstream entry above too)
+notebooks/.ipynb_checkpoints/

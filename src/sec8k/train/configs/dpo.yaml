@@ -1,0 +1,3 @@
+# DPO defaults: beta, reference-model strategy, paired-batch size, learning rate.
+# Filled in alongside src/sec8k/train/dpo.py.
+{}

@@ -1,0 +1,3 @@
+# SFT defaults: learning rate, LoRA rank/alpha, target modules, seq length,
+# gradient accumulation. Filled in alongside src/sec8k/train/sft.py.
+{}
