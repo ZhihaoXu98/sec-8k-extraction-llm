@@ -6,6 +6,14 @@ Instructions for AI agents (and humans) working in this repository.
 
 `sec8k` ingests SEC 8-K filings from EDGAR, fine-tunes Qwen 2.5 7B Instruct with LoRA SFT then DPO, serves the resulting model via vLLM with AWQ INT4 quantization on a single RTX 4070 (12 GB), and exposes structured extraction through a FastAPI service. A Streamlit demo UI lives under `frontend/`.
 
+## Repository State
+
+The repo is currently at the **docstring-only skeleton** stage: every Python file under `src/sec8k/`, `tests/`, and `scripts/` is a stub with only a module docstring and no implementation logic. The dependency manifest, tooling (ruff, mypy strict, pytest), CI workflow, and pre-commit hooks are wired up and green; module bodies are empty.
+
+`tests/test_smoke.py` is the one real test — it imports every subpackage to guard against accidental top-level GPU/heavy-dep imports as modules get filled in.
+
+When you start implementing a module, replace its docstring-only body with code, add real tests under `tests/` mirroring the source path, and refresh this section if the state of the repo changes meaningfully (for example once SFT is functional or the FastAPI server boots end-to-end).
+
 ## Build & Setup
 
 First-time setup:
@@ -101,3 +109,4 @@ Any change to this table lands in its own PR with rationale.
 - Hardcoding paths or URLs that belong in `config/default.yaml` or env vars.
 - Loading torch/vllm at module import time — these belong inside function bodies.
 - Bypassing `mypy --strict` with broad `# type: ignore`.
+- Removing the `exit 1` line from a `scripts/*.sh` stub without replacing it with the real launch command — these stubs fail loudly on purpose so `make train-sft`/`make serve` doesn't silently no-op while the underlying module is still empty.
