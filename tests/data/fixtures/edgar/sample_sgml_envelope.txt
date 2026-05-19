@@ -1,0 +1,20 @@
+<SEC-DOCUMENT>0000320193-24-000123.txt : 20240502
+<SEC-HEADER>
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>8-K
+<SEQUENCE>1
+<FILENAME>aapl-20240502.htm
+<TEXT>
+<html><body><p>Item 2.02. Results of Operations.</p><p>Earnings body.</p></body></html>
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-99.1
+<SEQUENCE>2
+<FILENAME>ex99-1.htm
+<TEXT>
+<html><body><p>Press release exhibit body.</p></body></html>
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
