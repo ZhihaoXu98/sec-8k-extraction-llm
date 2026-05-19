@@ -64,6 +64,12 @@ quant = [
 ui = [
     "streamlit>=1.36",
 ]
+label = [
+    "anthropic>=0.40",
+    "tenacity>=8.3",
+    "typer>=0.12",
+    "python-dotenv>=1.0",
+]
 
 [project.urls]
 Repository = "https://github.com/ZhihaoXu98/sec-8k-extraction-llm"
