@@ -218,11 +218,11 @@ __marimo__/
 .streamlit/secrets.toml
 
 # sec8k project artifacts
-data/
-models/*
-!models/.gitkeep
-eval_results/*
-!eval_results/.gitkeep
+/data/
+/models/*
+!/models/.gitkeep
+/eval_results/*
+!/eval_results/.gitkeep
 *.parquet
 *.arrow
 *.bin
